@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Trending</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <h1>GitHub Trending Repositories</h1>
+    <div id="buttons">
+    <form action="/scrape" method="POST">
+        <button type="submit">Update Data</button>
+    </form>
+    <form action="/clear" method="POST">
+        <button type="submit">Clear Data</button>
+    </form>
+    </div>
+    <table>
+        <tr>
+            <th id="repository">Repository</th>
+            <th id="description">Description</th>
+            <th id="stars">Stars</th>
+            <th id="stars_today">Stars Today</th>
+        </tr>
+        {% for repo in repos %}
+        <tr>
+            <td id="repository"><a href="{{ repo.link }}" target="_blank">{{ repo.name }}</a></td>
+            <td id="description">{{ repo.description }}</td>
+            <td id="stars">{{ repo.stars }}</td>
+            <td id="stars_today">{{ repo.stars_today }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

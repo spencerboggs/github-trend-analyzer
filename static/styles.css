@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* dark mode everything */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 50px;
+    color: #edf3fa;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #202020;
+}
+
+#repository {
+    width: 20%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#description {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#stars {
+    width: 10%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#stars_today {
+    width: 10%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #686868;
+}
+
+th,
+td {
+    padding: 10px;
+    color: #d1d1d1;
+}
+
+th {
+    background-color: #007bff;
+    color: rgb(240, 240, 240);
+}
+
+tr:nth-child(even) {
+    background-color: #272727;
+}
+
+tr:hover {
+    background-color: #414141;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* custom scroll wheel */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 0px;
+}
